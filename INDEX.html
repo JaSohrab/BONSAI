@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai</title>
+    <style>
+         body{ 
+            background-color:  rgb(122, 121, 121);
+            color:rgb(42, 33, 33);
+        }.navbar{ 
+            display: flex;
+            justify-content:space-around;
+            justify-items: center;
+            padding:10px 18px;
+            border-bottom-right-radius: 1px solid #e8dbdb;
+            border-bottom-left-radius: 1px solid #e8dbdb;
+            background-color: rgb(211, 190, 165);
+            width:100% auto;
+            height:5vw;
+            gap: 2px;
+            border-radius: 5px;
+            text-shadow: 0 1px 10px rgb(160, 170, 140);
+        }.menu{
+            display: flex;
+            align-items: center ;
+            gap: 24px;
+        }.lugo{
+            background-color:rgb(64, 77, 78);
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display:inline;
+            position:relative;
+        }.dropdown{
+            position:relative;
+           cursor: pointer;
+        }.dropdown-menu{
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            display:none;
+            background: #fff;
+            border: 1px solid #dddd;
+            border:1px solid#ddd;
+            font-size: 12px;
+            text-transform:capitalize;
+        }.dropdown-menu a{
+            text-decoration:none;
+            display:flex;
+            padding:3px;
+            color:black;
+        }.dropdown:hover .dropdown-menu{
+            display:block;       
+        }.dropdown-menu a:hover{
+            padding:3px 5px;
+            text-decoration:none;
+            color:crimson;
+        }#Loginin{
+            position:sticky;
+            text-decoration: none;
+            margin:8px;
+            padding: 8px;
+            background:#00a870;
+            color:#f1f7f4;
+            border-radius: 10px;
+        }#Startfree{
+            position: sticky;
+            text-decoration: none;
+            margin:8px;
+            padding:8px;
+            background:#feffff;
+            color:#0af37f;
+            border-radius: 10px;
+        }.b2{
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+        }.b2:hover,#Loginin:hover,#Startfree:hover{
+            color :rgb(79, 51, 51)
+        }.Pricing{
+            text-align:right;
+            padding: 40px;
+        }.billing-toggle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            column-gap: 10px;
+            margin-bottom:30px;
+        }.switch{
+        position: relative;
+        width: 50px;
+        height: 24px;
+        }.switch input{
+        display: none;
+        }.slider{
+        position:relative;
+        inset:0;
+        background: #ccc;
+        border-radius:20px;
+        cursor:pointer;
+        }.slider::before{
+        content:"";
+        font-size: 10px;
+        position:absolute;
+        width:20px;
+        height:20px;
+        left:-40px;
+        top:7px;
+        background:white;
+        border-radius:  45%;
+        transition:0.4s;
+        }.switch input:checked +.slider::before{
+        transform:translateX(20px);
+        }.cards{
+        display:flex;
+        justify-content:center;
+        text-align:center;
+        gap:20px;
+        box-shadow: 2px solid #008542;
+        }.card{
+        padding:20px;
+        width:220px;
+        height: 200px;
+        box-shadow: 10px  20px 20px 1px  rgba(167, 170, 167, 0.2);
+        }
+       .infon-section{
+        flex-direction: row;
+        justify-content: space-between;
+        text-align:center ;
+        gap:30px;
+        padding:60px 30px;
+        background:#f9f9f9;
+        }.info-card{
+        justify-content: center;
+        text-align:center;
+        flex:1;
+        background:#fff;
+        border-radius: 8px;
+        box-shadow:0 5px 20px rgba(0,0,0,0.5);
+        }.info-card h3{
+        margin:15px;
+        }.info-card p{
+        margin-bottom:20px;
+        color:#555;
+        }.info-card a{
+        text-decoration:none;
+        color:#00a870;
+        font-weight: 60px;
+        }@media (max-width:768px){
+        .footer-container{
+            flex-direction: column;
+            text-align: center;
+        }
+        }.footer{
+        background: #3e2e2e;
+        color: #fff;
+        padding:40px 20px;
+        }.footer-container{
+        display:flex;
+        justify-content:baseline;
+        gap:40px;
+        max-width: 1000px;
+        margin: auto;
+        }.footer-col{
+         display:flex;
+        flex-direction:column;
+        gap:10px;
+        }.footer-col h4{
+       margin-bottom:10px;
+       font-size: 20px;
+        }.footer-col a{
+        color:#ccc;
+        text-decoration:none;
+        font-size: 15px;
+        }.footer-col a:hover{
+        color:#fff;
+        }            
+    </style>
+</head>
+<body  >
+    <nav class="navbar">      
+           <div class="lugo">BONSAI</div>
+       <div class="menu">
+       <div class="dropdown">
+             <span>Product▾</span>
+             <div class="dropdown-menu">
+                    <a href="">phone</a>
+                    <a href="">computar</a>
+                    <a href="">more</a>
+            </div>
+       </div>
+       <div class="dropdown">
+             <span >Templats▾</span>
+          <div class="dropdown-menu">
+                    <a href="">one</a>
+                    <a href="">two</a>
+                    <a href="">tree</a>
+          </div>
+          </div> 
+          <a class="b2" href=""> Pricing</a>
+          <a class="b2" href=""> Reviews</a>
+          <a id="Loginin" href=""> Login in</a>
+          <a id="Startfree" href=""> Start free</a> 
+        </div> 
+    </nav>
+     </main> 
+        <section class="info-section">
+            <div class="info-card">
+                <h3>FREE Resoures</h3>
+                <p>Template,guiding and tools to start fast.</p>
+                <a href="">Learn more</a>
+            </div>
+            <div class="info-card">
+                <h3>Patners</h3>
+                <p>Trusted partners helping your busniess grow</p>
+                <a href="">see partners</a>
+            </div>
+            <div class="info-card">
+                <h3>Cummunity</h3>
+                <p>Join thousands of freelancers worllide.</p>
+                <a href="">join now</a>
+            </div>
+        </section> 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>Free</h4>
+                <a href="">Pricing</a>
+                <a href="">Template</a>
+                <a href="">Trial</a>
+            </div>
+            <div class="footer-col">
+                <h4>Partners</h4>
+                <a href="">Affilaites</a>
+                <a href="">Agencies</a>
+                <a href="">Reselers</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="">About</a>
+                <a href="">Careers</a>
+                <a href="">Conracts</a>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script>
+        const toggle=document.getElementById("toggle");
+        const prices =document.querySelectorAll(".price");
+        toggle.addEventListener("change",()=>{
+            prices.forEach(price => {
+                const month=price.dataset.month;
+                const year=price.dataset.year;
+                
+                price.textContent=toggle.checked
+                
+                ?`$${year}/month`
+                    :`$${month}/month`;
+            });
+        });
+    </script>
+</body>
+</html>
